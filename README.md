@@ -1,6 +1,52 @@
 # Telegram AI Automation Bot
 
-An open-source, anonymized portfolio showcase inspired by a Telegram automation solution I developed for a company. This is an independently rewritten demonstration, **not the original client deployment**. No client-specific code, branding, business information, contact details, or production data are included.
+![Telegram AI Automation Bot — illustrated project preview](assets/hero.svg)
+
+<p align="center"><strong>Automate communication. Deliver helpful content. Keep communities engaged.</strong></p>
+
+<p align="center">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&amp;logoColor=white" />
+  <img alt="Telegram" src="https://img.shields.io/badge/Telegram-Bot_API-26A5E4?logo=telegram&amp;logoColor=white" />
+  <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-API-222222?logo=openai&amp;logoColor=white" />
+  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-Local_storage-003B57?logo=sqlite&amp;logoColor=white" />
+</p>
+
+## Overview
+
+**Telegram AI Automation Bot** is a Python project that helps teams and community managers automate repetitive communication in Telegram. It combines command-based interactions, optional AI-generated educational content, scheduled messages, and lightweight local storage.
+
+The idea grew out of a real-world automation solution I developed for a company. This repository is an **independently rewritten, anonymized portfolio demonstration**, not the original client deployment. It contains no client branding, business information, production user data, private contact details, or credentials.
+
+## Why it matters
+
+Answering common questions, preparing recurring posts, and keeping a Telegram community active can take significant manual effort. A bot can handle predictable tasks automatically, freeing people to focus on conversations that actually require a human.
+
+For a business or organization, this approach can help:
+
+- **Save time:** automate scheduled educational updates instead of publishing each message manually.
+- **Maintain consistency:** deliver information at predictable times with a recognizable format.
+- **Improve accessibility:** offer simple self-service commands available at any time.
+- **Support community engagement:** share relevant tips even when the team is busy.
+- **Experiment with AI responsibly:** generate short informational messages with human-controlled configuration.
+
+For community members, it provides an easy way to request useful content with `/tip`, understand available commands, and opt out of stored subscriptions with `/stop`.
+
+> **Current demo scope:** scheduled posts go to one configured chat; `/tip` responds on demand. This version does not implement a customer-service ticket queue, human handoff, automatic FAQ matching, or broadcasts to stored subscriber IDs.
+
+## Visual walkthrough
+
+The image above is a **fictional interface illustration** showing how a short tip and a scheduled update might appear. It is not a screenshot of the original client bot or a live deployment.
+
+```mermaid
+flowchart TD
+    A[Telegram user] --> B[Bot commands]
+    B --> C[On-demand tech tip]
+    B --> D[Subscription control]
+    C --> E[OpenAI or local fallback]
+    D --> F[(SQLite)]
+    G[Daily scheduler] --> E
+    E --> H[Telegram message]
+```
 
 ## Features
 
